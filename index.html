@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Road Quest — Cuestionario Interactivo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&family=Fredoka+One&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-container">
+
+    <canvas id="road-canvas"></canvas>
+
+    <div id="hud">
+      <div id="question-bubble">
+        <canvas id="avatar-canvas" width="64" height="64" aria-hidden="true"></canvas>
+        <div id="question-text-wrap">
+          <p id="question-text">Cargando…</p>
+        </div>
+      </div>
+      <div id="progress-row">
+        <div class="progress-track">
+          <div id="progress-bar">
+            <div id="progress-shine"></div>
+          </div>
+        </div>
+        <span id="progress-label">1 / 2</span>
+      </div>
+    </div>
+
+    <div id="answer-buttons"></div>
+
+    <div id="instructions">
+      🖱️ Pasa el mouse sobre una respuesta y haz clic para elegir
+    </div>
+
+    <!-- ══ MODAL MOTIVACIONAL (entre bloques) ══ -->
+    <div id="motivational-screen" class="hidden" role="dialog" aria-modal="true">
+      <div class="mot-card">
+        <div class="mot-block-label">Parte 1 de 2</div>
+        <div class="mot-emoji">🌟</div>
+        <h2 class="mot-titulo">¡Increíble!</h2>
+        <p  class="mot-texto">Mensaje motivacional.</p>
+        <div class="mot-stars"></div>
+        <div class="mot-score-track"><div class="mot-score-fill"></div></div>
+        <p class="mot-score-label">0 / 10 puntos</p>
+        <button id="continue-btn">¡Seguir manejando! 🚗</button>
+      </div>
+    </div>
+
+    <div id="results-screen" class="hidden" role="dialog" aria-modal="true">
+      <div id="results-card">
+        <div id="results-trophy">🏁</div>
+        <h1 id="results-title">¡Llegaste a la meta!</h1>
+        <p id="results-subtitle">Aquí está lo que nos dijiste</p>
+        <div id="results-list"></div>
+        <button id="restart-btn">🔄 Jugar de nuevo</button>
+      </div>
+    </div>
+
+    <div id="flash-overlay"></div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

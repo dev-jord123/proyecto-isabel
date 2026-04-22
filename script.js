@@ -91,32 +91,27 @@ const BLOCKS = [
       },
     ],
     /* Mensajes ordenados de mayor a menor minScore */
-mensajes: [
-  { 
-    minScore: 8, 
-    emoji: '🚀', 
-    titulo: '¡Modo imparable activado!',
-    texto: 'Tu energía hoy es contagiosa. Aprovecha este impulso para conquistar tus metas y celebrar lo lejos que has llegado. ¡Brilla!',
-    color: '#06D6A0', 
-    estrellas: 3 
-  },
-  { 
-    minScore: 5, 
-    emoji: '🏗️', 
-    titulo: 'Estás construyendo tu camino',
-    texto: 'No todos los días tienen que ser perfectos para ser valiosos. Mantener el equilibrio es una victoria. ¡Sigue a tu ritmo!',
-    color: '#FF9F43', 
-    estrellas: 2 
-  },
-  { 
-    minScore: 0, 
-    emoji: '🎨', 
-    titulo: 'Mañana será un lienzo nuevo',
-    texto: 'Hoy tu cuerpo pide pausa y dársela es de valientes. Descansar no es rendirse, es recargar para volver a empezar con fuerza.',
-    color: '#A78BFA', 
-    estrellas: 1 
-  },
-],
+  mensajes: [
+
+      { minScore: 8, emoji: '🌟', titulo: '¡Tu cuerpo está genial hoy!',
+
+        texto: 'Tienes mucha energía y te sientes muy bien. ¡Eres increíble!',
+
+        color: '#06D6A0', estrellas: 3 },
+
+      { minScore: 5, emoji: '😊', titulo: '¡Vas bien, sigue adelante!',
+
+        texto: 'Hoy no es tu mejor día, pero tu cuerpo es fuerte. ¡Mañana estará mejor!',
+
+        color: '#FF9F43', estrellas: 2 },
+
+      { minScore: 0, emoji: '💙', titulo: 'Te mereces mucho cuidado hoy',
+
+        texto: 'Parece que tu cuerpo necesita descanso. Está bien pedir ayuda. ¡Eres muy valiente!',
+
+        color: '#A78BFA', estrellas: 1 },
+
+    ], 
   },
 
   /* ── BLOQUE 2: ¿Cómo me siento por dentro? ──────────── */
